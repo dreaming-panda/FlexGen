@@ -38,7 +38,7 @@ def profile_bandwidth(path):
              ("cpu", "disk"), ("disk", "cpu")]
 
     for (dst, src) in links:
-        for b in [1, 128, 512]:
+        for b in [1, 128, 512, 1024, 2048, 4096, 8192]:
             if dst == "cpu":
                 dst_tensor = torch.ones((b, s, h), dtype=torch.int8, pin_memory=True)
             elif dst == "gpu":
