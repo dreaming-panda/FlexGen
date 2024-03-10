@@ -9,7 +9,7 @@ import os
 import time
 import torch
 
-from flexgen.utils import GB, MB, KB
+from utils import GB, MB, KB
 
 
 def benchmark_func(func, number, repeat, warmup=3):
