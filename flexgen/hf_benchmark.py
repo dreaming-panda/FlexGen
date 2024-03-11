@@ -5,7 +5,7 @@ import argparse
 import time
 import accelerate
 parser = argparse.ArgumentParser()
-parser.add_argument('--model', type=str, default="meta-llama/Llama-2-70b-chat-hf",help='model')
+parser.add_argument('--model', type=str, default="meta-llama/Llama-2-70b-hf",help='model')
 parser.add_argument('--T', type=int, default=10, help='repeat times')
 parser.add_argument('--B', type=int, default=1, help='batch size')
 parser.add_argument('--P', type=int, default=128, help='prefix length')
